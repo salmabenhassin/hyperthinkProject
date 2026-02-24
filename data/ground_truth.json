@@ -1,0 +1,72 @@
+[
+  {
+    "question": "How many identical layers does the encoder have?",
+    "answer": "The encoder is composed of a stack of N = 6 identical layers.",
+    "page": 3,
+    "span_start": 80,
+    "span_end": 141
+  },
+  {
+    "question": "What is the dimension of d_model?",
+    "answer": "To facilitate these residual connections, all sub-layers in the model... produce outputs of dimension d_model = 512.",
+    "page": 3,
+    "span_start": 444,
+    "span_end": 558
+  },
+  {
+    "question": "Which hardware was used for training the models?",
+    "answer": "We trained our models on one machine with 8 NVIDIA P100 GPUs.",
+    "page": 7,
+    "span_start": 300,
+    "span_end": 361
+  },
+  {
+    "question": "How long did the training of the big model take?",
+    "answer": "The big models were trained for 300,000 steps (3.5 days).",
+    "page": 7,
+    "span_start": 530,
+    "span_end": 586
+  },
+  {
+    "question": "What is the BLEU score of the big model on the EN-DE task?",
+    "answer": "The big transformer model... establishing a new state-of-the-art BLEU score of 28.4.",
+    "page": 8,
+    "span_start": 100,
+    "span_end": 184
+  },
+  {
+    "question": "What optimizer was used for training?",
+    "answer": "We used the Adam optimizer with beta1=0.9, beta2=0.98 and epsilon=10^-9.",
+    "page": 7,
+    "span_start": 600,
+    "span_end": 673
+  },
+  {
+    "question": "What is the formula for the attention mechanism?",
+    "answer": "Attention(Q, K, V) = softmax(QK^T / sqrt(d_k))V",
+    "page": 4,
+    "span_start": 350,
+    "span_end": 397
+  },
+  {
+    "question": "Why did the authors choose sinusoidal positional encodings?",
+    "answer": "We chose this function because we hypothesized it would allow the model to easily learn to attend by relative positions.",
+    "page": 6,
+    "span_start": 400,
+    "span_end": 517
+  },
+  {
+    "question": "How is the decoder different from the encoder regarding attention?",
+    "answer": "We also modify the self-attention sub-layer in the decoder stack to prevent positions from attending to subsequent positions.",
+    "page": 3,
+    "span_start": 650,
+    "span_end": 771
+  },
+  {
+    "question": "What regularization technique was applied to the sums of embeddings?",
+    "answer": "In addition, we apply dropout to the sums of the embeddings and the positional encodings in both the encoder and decoder stacks.",
+    "page": 8,
+    "span_start": 50,
+    "span_end": 175
+  }
+]
